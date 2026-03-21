@@ -7,4 +7,6 @@ fun UserDto.toModel() = GithubModel(
     name = name?:"",
     urlImage=avatarUrl,
     avatar = login,
+    bio = bio ?: "",
+    company = company ?: ""
 )

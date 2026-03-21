@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.ucb.app.github.presentation.screen.GithubScreen
+import com.ucb.app.movie.presentation.screen.MovieScreen
 
 @Composable
 fun AppNavHost() {
@@ -13,7 +14,7 @@ fun AppNavHost() {
     val navController = rememberNavController()
 
 
-    NavHost(navController = navController, startDestination = NavRoute.Github) {
+    NavHost(navController = navController, startDestination = NavRoute.Movies) {
         composable<NavRoute.Profile> {
 
 
@@ -25,6 +26,10 @@ fun AppNavHost() {
         }
         composable<NavRoute.Github> {
             GithubScreen()
+        }
+
+        composable<NavRoute.Movies> {
+            MovieScreen()
         }
     }
 }

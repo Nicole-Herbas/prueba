@@ -11,5 +11,6 @@ data class UserDto(
     val name: String? = null,
     @SerialName("created_at")
     val createdAt: String? = null,
-    val bio: String ? = null
+    val bio: String ? = null,
+    val company: String? = null
 )
