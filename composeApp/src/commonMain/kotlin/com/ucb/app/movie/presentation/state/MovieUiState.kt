@@ -4,5 +4,7 @@ import com.ucb.app.movie.domain.model.MovieModel
 
 data class MovieUiState(
     val isLoading: Boolean = false,
-    val list: List<MovieModel> = emptyList()
+    val list: List<MovieModel> = emptyList(),
+    val ratings: Map<Int, Int> = emptyMap()
 )
+
